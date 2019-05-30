@@ -58,6 +58,20 @@ div.gallery>div:last-child {
     background-image: url('images/gaetano-cessati-124444-unsplash.jpg');
 }
 
-div.text {
-    height: 100%;
+h1 {}
+
+h2:nth-child(1) {
+    transition: top .5s;
+}
+
+h2:nth-child(3) {
+    transition: bottom .5s;
+}
+
+.disappear-above {
+    margin-top: -500px;
+}
+
+.disappear-below {
+    margin-bottom: -500px;
 }
