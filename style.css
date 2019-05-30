@@ -7,4 +7,57 @@ pinky neighbourhood     Photo by Johan Mouchet on Unsplash
 lil boy                 Photo by michael podger on Unsplash
 */
 
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
 
+div.gallery {
+    display: flex;
+    height: 100vh;
+}
+
+div.gallery>div {
+    border: 10px solid rgba(255, 255, 255, .3);
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    text-transform: uppercase;
+    flex: 1;
+    /*for the inner text */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+div.gallery>div:first-child {
+    background-color: red;
+    background-image: url('images/aaron-burden-38410-unsplash.jpg');
+}
+
+div.gallery>div:nth-child(2) {
+    background-color: orange;
+    background-image: url('images/boxed-water-is-better-1463988-unsplash.jpg');
+}
+
+div.gallery>div:nth-child(3) {
+    background-color: yellow;
+    background-image: url('images/michael-podger-41325-unsplash.jpg');
+}
+
+div.gallery>div:nth-child(4) {
+    background-color: green;
+    background-image: url('images/erwan-hesry-640713-unsplash.jpg');
+}
+
+div.gallery>div:last-child {
+    background-color: blue;
+    background-image: url('images/gaetano-cessati-124444-unsplash.jpg');
+}
+
+div.text {
+    height: 100%;
+}
