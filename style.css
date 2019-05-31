@@ -7,6 +7,10 @@ pinky neighbourhood     Photo by Johan Mouchet on Unsplash
 lil boy                 Photo by michael podger on Unsplash
 */
 
+* {
+    box-sizing: border-box;
+}
+
 html,
 body {
     margin: 0;
@@ -26,11 +30,13 @@ div.gallery>div {
     background-position: center;
     text-align: center;
     text-transform: uppercase;
-    flex: 1;
+    flex: 1 1 10%;
     /*for the inner text */
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    /*hide out words */
+    overflow: hidden;
 }
 
 div.gallery>div:first-child {
@@ -61,11 +67,19 @@ div.gallery>div:last-child {
 h1 {}
 
 h2:nth-child(1) {
-    transition: top .5s;
+    transition: margin 2s ease;
 }
 
 h2:nth-child(3) {
-    transition: bottom .5s;
+    transition: margin 2s ease; //use an animation to achieve visible movement up and down
+}
+
+div.gallery>div.fat-up {
+    flex: 5 1 10%;
+}
+
+.slim-down {
+    flex: 1 1 10%;
 }
 
 .disappear-above {
