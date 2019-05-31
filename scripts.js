@@ -1,9 +1,6 @@
-/* get all elements */
+/* get all needed elements */
 let gallery = document.querySelector('div.gallery');
 let pics = document.querySelectorAll('div.gallery > div');
-let firstWords = document.querySelectorAll('h2:first-child');
-let lastWords = document.querySelectorAll('h2:last-child');
-
 
 
 /* handler functions */
@@ -21,14 +18,5 @@ function handleClick(e) {
     }
 }
 
-function toggleUp() {
-
-}
-
-function toggleDown() {
-
-}
-
-
-/* hook up event listeners */
+/* hook up event listener */
 pics.forEach(pic => pic.addEventListener('click', handleClick));
