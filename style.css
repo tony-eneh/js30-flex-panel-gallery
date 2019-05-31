@@ -68,10 +68,14 @@ div.gallery>div:last-child {
 
 h2:nth-child(1) {
     transition: margin .7s ease-in-out;
+    /*hide upper and lower texts by default*/
+    /* margin-top: -500px; */
 }
 
 h2:nth-child(3) {
     transition: margin .7s ease-in-out;
+    /*hide upper and lower texts by default*/
+    /* margin-bottom: -500px; */
 }
 
 div.gallery>div.fat-up {
