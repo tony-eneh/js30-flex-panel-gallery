@@ -66,14 +66,12 @@ div.gallery>div:last-child {
     background-image: url('images/gaetano-cessati-124444-unsplash.jpg');
 }
 
-h1 {}
-
 h2:nth-child(1) {
     transition: margin .7s ease-in-out;
 }
 
 h2:nth-child(3) {
-    transition: margin .7s ease-in-out; //use an animation to achieve visible movement up and down
+    transition: margin .7s ease-in-out;
 }
 
 div.gallery>div.fat-up {
